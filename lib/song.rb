@@ -2,7 +2,7 @@ require 'pry'
 
 class Song
 
-  attr_reader :name, :artist, :genre
+  attr_reader :name, :artist, :genre, :count
 
   @@count = 0
   @@artists = []
@@ -19,9 +19,9 @@ class Song
     @@genres << self.genre
   end
 
-  def self.count
-    @@count
-  end
+  # def self.count
+  #   @@count
+  # end
 
   def self.artists
     @@artists.uniq
